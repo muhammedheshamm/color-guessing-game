@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    font-family: "Raleway", Sans-serif;
+    background-color: #eee;
+}
+*{
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+h1{
+    background-color: #2c8e99;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 25px;
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+}
+h1 span{
+    font-size: 75px;
+}
+
+@media(max-width:650px){
+    h1 span{
+        font-size: 55px;
+    }
+    h1{
+        font-size: 25px;
+    }
+}
+@media(max-width:450px){
+    h1 span{
+        font-size: 35px;
+    }
+    h1{
+        font-size: 15px;
+    }
+}
+.stripe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    background-color: white;
+}
+.stripe span{
+    width: 120px;
+    text-align: center;
+    color: #2c8e99;
+    padding: 5px 5px;
+}
+
+.stripe div{
+    width: 120px;
+}
+
+@media(max-width:460px){
+    .stripe{
+        gap: 0;
+    }
+}
+.stripe span:not(#win-or-lose):hover{
+    background-color: #2c8e99;
+    color: white;
+}
+.stripe span:not(#win-or-lose){
+    cursor: pointer;
+}
+
+.cont{
+    max-width: 890px;
+    max-height: calc(100vh - 232px);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.square{
+    background-color: #222;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+@media(max-width:700px){
+    .square{
+        width: 170px;
+        height: 170px;
+    }
+}
+@media(max-width:590px){
+    .square{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media(max-width:440px){
+    .square{
+        width: 90px;
+        height: 90px;
+    }
+}
+
+.square:hover{
+    transform: scale(.97);
+}
+
+.active{
+    background-color: #2c8e99;
+    color: white!important;
+}
